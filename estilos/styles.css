@@ -1,0 +1,312 @@
+/*Estructura*/
+*{ box-sizing: border-box; }
+
+body {
+	color: #bb3b0e;
+	font-family: 'Merriweather'; 
+	background-color: #f0f0f0;
+	padding: 20px;
+	background-color: #414141;
+}
+p {
+	color: #4d3e3e;
+	font-family: 'Merriweather'; 
+}
+section div {
+	margin-bottom: 20px;
+	margin-top:20px;
+	padding: 10px 10px 10px 10px;
+	background-color: #dddddd;
+}
+footer > p,
+header > nav ¨{ max-width: 1200px; margin: auto; }
+
+
+/*Headings*/
+h1 {
+	color: #4d3e3e; 
+	font-family: Raleway; 
+	font-size: 30px;
+}
+
+h2 {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 20px; 
+}
+
+h3, h4, {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 18px; 
+}
+a {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 18px; 
+}
+
+
+/*Texto*/
+
+
+footer {
+	color: #4d3e3e;
+	font-family: Raleway; 
+	margin: auto;
+	margin-top:10px;
+	padding: 10px 10px 10px 10px;
+	background-color: #dddddd;
+}
+
+button {
+	border: 20px;
+	border-bottom: 20px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+}
+
+
+/*clases css*/
+
+.color-gris {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 20px;
+}
+.nav-menu {
+	display: grid;
+	font-family: Raleway;
+	color: #4d3e3e;
+	font-size: 16px;
+	background-color: #dddddd;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px 5px 5px 5px;
+	width: 1200px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	border-radius: 10px;
+	justify-content: center;
+}
+
+.box-productos {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	width: auto;
+	background-color: #dddddd
+}
+.box-padre1 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	width: auto;
+	flex-basis: auto;
+}
+
+.box-padre2 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	width: auto;
+	flex-basis: auto;
+	flex-direction: row-reverse;
+}
+
+.box-productos-hijo1 {
+	align-content: center;
+	justify-content: center;
+	padding: 10px 10px 10px 10px;
+	border: 100px;
+	margin-left: 100px;	
+	margin-right: 100px;
+	outline: 1px solid grey;
+}
+
+.box-productos-hijo2 {
+	align-items: right;
+	justify-content: right;
+	outline: 1px solid grey;
+}
+.box-coleccion {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: 650px;
+	width: 1200px;
+	background-color: #dddddd
+}
+
+.box-coleccion-hijo1 {
+	align-content: center;
+	justify-content: center;
+	padding: 10px 10px 10px 10px;
+	border: 100px;
+	margin-left: 100px;	
+	margin-right: 100px;
+	outline: 1px solid grey;
+}
+
+.box-coleccion-hijo2 {
+	align-items: right;
+	justify-content: right;
+	outline: 1px solid grey;
+}
+
+.box-nosotros {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: 750px;
+	width: 1200px;
+	background-color: #dddddd
+}
+.box-procesos {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: 650px;
+	width: 1200px;
+	background-color: #dddddd
+}
+
+.box-nosotros-hijo1 {
+	align-content: center;
+	justify-content: center;
+	padding: 10px 10px 10px 10px;
+	border: 100px;
+	margin-left: 100px;	
+	margin-right: 100px;
+	outline: 1px solid grey;
+}
+
+.box-nosotros-hijo2 {
+	align-items: right;
+	justify-content: right;
+	outline: 1px solid grey;
+}
+.box-procesos {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: 650px;
+	width: 1200px;
+	background-color: #dddddd
+}
+
+.box-procesos-hijo1 {
+	align-content: center;
+	justify-content: center;
+	padding: 10px 10px 10px 10px;
+	border: 100px;
+	margin-left: 100px;	
+	margin-right: 100px;
+	outline: 1px solid grey;
+}
+
+.box-procesos-hijo2 {
+	align-items: right;
+	justify-content: right;
+	outline: 1px solid grey;
+}
+
+.box-contacto {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	width: auto;
+	background-color: #dddddd
+}
+.box-contacto-padre {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 10px 10px 10px;
+	height: auto;
+	width: auto;
+	align-content:center;
+	background-color: #dddddd
+}
+
+.grid-productos {
+	display: grid;
+	grid-column-gap: 100px;
+	grid-row-gap: 20px;
+	grid-template-columns: 400px 400px;
+	grid-template-rows: 400px 400px;
+	align-items: center;
+	padding: 10px 10px 10px 10px;
+	grid-template-areas: 
+	"alfombra cortina"
+	"banqueta zafu"
+	"individualyposavaso cuencoceramica"
+	"tapiz piedecama"
+}
+
+.button {
+	border: 20px;
+	border-bottom: 20px;
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+}
+
+
+/*imagenes*/
+main img {
+	height: 50px;
+	width: 50px;
+}
+section img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 500px;
+	width: 800px;
+}
+section main img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 700px;
+	width: 1200px;
+}
+video {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 500px;
+	width: 	800px;
+}
+section d {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 300px;
+	width: 450px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) { 
+	.nav-menu{ background-color:blue;}
+	.box-productos-hijo1{background-color: rebeccapurple;}
+	.box-productos-hijo2{background-color: royalblue;}
+ }
+
+ .parrafo-amarillo{
+	 background-color: yellow;
+ }
+
+ .parrafo-verde{
+	 background-color: teal;
+ }
+ .parrafo-rosa{
+	 background-color: thistle;
+ }
+ .parrafo-celeste{
+	 background-color: turquoise;
+ }
