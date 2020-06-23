@@ -2,17 +2,23 @@
 *{ box-sizing: border-box; }
 
 body {
+	color: #bb3b0e;
+	font-family: 'Merriweather'; 
 	background-color: #f0f0f0;
 	padding: 20px;
 }
-
+p {
+	color: #4d3e3e;
+	font-family: 'Merriweather'; 
+}
 section div {
 	margin-bottom: 20px;
 	margin-top:20px;
 	padding: 10px 10px 10px 10px;
 	background-color: #dddddd;
 }
-
+footer > p,
+header > nav ¨{ max-width: 1200px; margin: auto; }
 @-o-viewport {
 	width: device-width;
 }
@@ -23,40 +29,43 @@ section div {
 	width: device-width;
 }
 
-/*Headings*/
 
+/*Headings*/
 h1 {
-	font-size: 10px;
-    font-family: 'Raleway';
-    padding-top: 10px;
-	letter-spacing: 0em;
-    line-height: 150px;
-	font-weight: 900;
-    color: #4d3e3e;
+	color: #4d3e3e; 
+	font-family: Raleway; 
+	font-size: 30px;
 }
+
 
 h2 {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 16px; 
+	font-size: 20px; 
 }
-h3 h4 {
+
+h3, h4, {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 14px; 
+	font-size: 18px; 
 }
+a {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 18px; 
+}
+
 
 /*Texto*/
 
+
 footer {
-	color: #f0f0f0;
+	color: #4d3e3e;
 	font-family: Raleway; 
-	font-size: 13px;
 	margin: auto;
 	margin-top:10px;
-	padding: 20px;
-	background-color: #3b3c36;
-	text-align: center;
+	padding: 10px 10px 10px 10px;
+	background-color: #dddddd;
 }
 
 button {
@@ -65,105 +74,29 @@ button {
 	padding: 5px 10px 5px 10px;
 	border-radius: 10px;
 }
-p {
-	color: #4d3e3e;
-	font-family: 'Merriweather'; 
-	font-size: 20px;
-}
-a {
-	color: #4d3e3e;
-	font-family: Raleway;
-	font-size: 15px; 
-	text-decoration: none;
-	text-decoration-color: none;
-}
 
 
 /*clases css*/
 
-.header {
-	background: rgb(255, 255, 255);
-	opacity: 90%;
-	color: white;
-	padding: 5px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-}
-.header a {
-	color: black;
-	text-decoration: none;
-	padding: 2rem 0;
-}
-.logo {
-	height: 50px;
-	width: 50px;
-}
-.menu-icon {
-	display: none;
-	color: #4d3e3e;
-	height: 20px;
-	width: 20px;
-}
-.logo-nav-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.container {
-	width: 85% ;
-	max-width: 850px;
-	margin: 0 auto;
-}
 .color-gris {
 	color: #4d3e3e;
 	font-family: Raleway;
 	font-size: 18px;
 	font-weight: 20px;
 }
-
-.main {
-margin-top: 30px;
-}
-
-.navigation ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.nav-menu {
+	display: grid;
+	font-family: Raleway;
 	color: #4d3e3e;
-}
-.navigation ul li {
-	display: inline-block;
-	padding: 5px;
-	color: #4d3e3e;
-	text-decoration: none;
-}
-.navigation ul li a {
-	display: block;
-	padding: 0.5rem 1rem;
-	color: #4d3e3e;
-	text-decoration: none;
-}
-.navigation ul li a:hover {
-background-color: rgb(196, 189, 185);
-border-radius: 20px;
-transition: all 0.5s linear;
-text-decoration: none;
-text-decoration-color: none;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px 5px 5px 5px;
+	width: 1200px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	justify-content: center;
 }
 
-.nav-button{
-	display:none;
-}
-.transition{
-	-webkit-transition: all 500ms linear;
-    -moz-transition: all 500ms linear;
-    -o-transition: all 500ms linear;
-    -ms-transition: all 500ms linear;
-    transition: all 500ms linear;
-}
 .box-productos {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -335,7 +268,10 @@ text-decoration-color: none;
 }
 
 /*imagenes*/
-
+main img {
+	height: 50px;
+	width: 50px;
+}
 section img {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -359,39 +295,6 @@ section d {
 	margin-top: 20px;
 	height: 300px;
 	width: 450px;
-}
-@media only screen and (max-width :767) {
-	.menu-icon {
-		display: block;
-		cursor: pointer;
-		padding: 0.5rem 1rem;
-	}
-	.navigation {
-		width: 100%;
-		margin-top: 1rem;
-	}
-	.navigation ul {
-		display: none;
-	}
-	.navigation ul li {
-		display: block;
-	}
-	.navigation ul.show {
-		display: block;
-	}
-	.navigation ul li a {
-		display: block;
-		padding: 0.5rem 0;
-		color: #4d3e3e;
-		text-decoration: none;
-	}
-	.navigation ul li a:hover {
-	background-color: rgb(196, 189, 185);
-	border-radius: 20px;
-	transition: all 0.5s linear;
-	text-decoration: none;
-	text-decoration-color: none;
-	}
 }
 
 @media screen and (min-width: 740px) {
