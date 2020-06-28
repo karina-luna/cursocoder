@@ -12,7 +12,9 @@ section div {
 	padding: 10px 10px 10px 10px;
 	background-color: #dddddd;
 }
-
+h1 {
+	padding-top: 35px;
+}
 @-o-viewport {
 	width: device-width;
 }
@@ -26,13 +28,14 @@ section div {
 /*Headings*/
 
 h1 {
-	font-size: 10px;
+	font-size: 16px;
     font-family: 'Raleway';
     padding-top: 10px;
 	letter-spacing: 0em;
     line-height: 150px;
 	font-weight: 900;
-    color: #4d3e3e;
+	color: #4d3e3e;
+	margin-top:20px;
 }
 
 h2 {
@@ -47,6 +50,10 @@ h3 h4 {
 }
 
 /*Texto*/
+h1 {
+	font-size: 10px;
+	padding-top: 35px;
+}
 
 footer {
 	color: #f0f0f0;
@@ -55,7 +62,7 @@ footer {
 	margin: auto;
 	margin-top:10px;
 	padding: 20px;
-	background-color: #3b3c36;
+	background-color: #772F1A;
 	text-align: center;
 }
 
@@ -65,20 +72,41 @@ button {
 	padding: 5px 10px 5px 10px;
 	border-radius: 10px;
 }
-p {
+section div p {
 	color: #4d3e3e;
 	font-family: 'Merriweather'; 
-	font-size: 20px;
+	font-size: 16px;
+	text-align: center;
 }
-a {
+nav a {
 	color: #4d3e3e;
 	font-family: Raleway;
 	font-size: 15px; 
 	text-decoration: none;
 	text-decoration-color: none;
+	text-align: center;
+	align-content: center;
 }
-
-
+div a {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 15px; 
+	text-decoration: none;
+	text-decoration-color: none;
+	text-align: center;
+}
+div h2 {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 22px; 
+	text-align: center;
+}
+div p {
+	color: #4d3e3e;
+	font-family: 'Merriweather'; 
+	font-size: 16px;
+	text-align: center;
+}
 /*clases css*/
 
 .header {
@@ -90,6 +118,7 @@ a {
 	left: 0;
 	top: 0;
 	right: 0;
+	margin-top: 30px;
 }
 .header a {
 	color: black;
@@ -175,7 +204,7 @@ text-decoration-color: none;
 .box-padre1 {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 10px 10px 10px 10px;
@@ -205,6 +234,7 @@ text-decoration-color: none;
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-productos-hijo2 {
@@ -229,6 +259,7 @@ text-decoration-color: none;
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-coleccion-hijo2 {
@@ -243,7 +274,7 @@ text-decoration-color: none;
 	padding: 10px 10px 10px 10px;
 	height: 750px;
 	width: 1200px;
-	background-color: #dddddd
+	background-image: url(portadanosotros.jpg);
 }
 .box-procesos {
 	margin-bottom: 20px;
@@ -262,6 +293,7 @@ text-decoration-color: none;
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-nosotros-hijo2 {
@@ -286,6 +318,7 @@ text-decoration-color: none;
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-procesos-hijo2 {
@@ -300,7 +333,8 @@ text-decoration-color: none;
 	padding: 10px 10px 10px 10px;
 	height: auto;
 	width: auto;
-	background-color: #dddddd
+	background-color: #dddddd;
+	text-align: center;
 }
 .box-contacto-padre {
 	margin-bottom: 20px;
@@ -309,6 +343,7 @@ text-decoration-color: none;
 	height: auto;
 	width: auto;
 	align-content:center;
+	text-align: center;
 	background-color: #dddddd
 }
 
@@ -346,7 +381,7 @@ section main img {
 	margin-bottom: 20px;
 	margin-top: 20px;
 	height: 700px;
-	width: 1200px;
+	width: auto;
 }
 video {
 	margin-bottom: 10px;
@@ -354,11 +389,9 @@ video {
 	height: 500px;
 	width: 	800px;
 }
-section d {
-	margin-bottom: 20px;
-	margin-top: 20px;
-	height: 300px;
-	width: 450px;
+section div img {
+	height: 450px;
+	width: 600px;
 }
 @media only screen and (max-width :767) {
 	.menu-icon {
@@ -410,4 +443,3 @@ section d {
 	  .grid-full  { width: 96.969696969697%; }
 	}
 	
-

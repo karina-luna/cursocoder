@@ -14,5 +14,13 @@
     "nodemon": "^2.0.4"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karina-luna/cursocoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karina-luna/cursocoder/issues"
+  },
+  "homepage": "https://github.com/karina-luna/cursocoder#readme",
   "description": ""
 }

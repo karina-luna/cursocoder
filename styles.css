@@ -2,53 +2,45 @@
 *{ box-sizing: border-box; }
 
 body {
-	color: #bb3b0e;
-	font-family: 'Merriweather'; 
-	font-size: 13px;
-	line-height: 1.5;
-	text-align: center;
 	background-color: #f0f0f0;
 	padding: 20px;
-	margin: 0;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	text-size-adjust: 100%;
 }
-p {
-	color: #4d3e3e;
-	font-family: 'Merriweather'; 
-}
+
 section div {
 	margin-bottom: 20px;
 	margin-top:20px;
 	padding: 10px 10px 10px 10px;
 	background-color: #dddddd;
 }
-footer > p,
-header > nav ¨{ max-width: 1200px; margin: auto; }
-
+h1 {
+	padding-top: 35px;
+}
+@-o-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
 
 /*Headings*/
 h1 {
 	color: #4d3e3e; 
-	font-family: 'Raleway'; 
-	font-size: 10px;
-	padding-top: 50px;
-	letter-spacing: 0em;
-    line-height: 150px;
-	font-weight: 900;
+	font-family: Raleway; 
+	font-size: 30px;
 }
 
 h2 {
-	color: #79bb0e;
-	font-family: 'Raleway';
-	font-size: 20px; 
-}
-
-h3, h4, {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 18px; 
+	font-size: 20px; 
+}
+h3 h4 {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 14px; 
 }
 a {
 	color: #4d3e3e;
@@ -76,7 +68,6 @@ button {
 	border-radius: 10px;
 }
 
-
 /*clases css*/
 
 .color-gris {
@@ -86,7 +77,7 @@ button {
 	font-weight: 20px;
 }
 .nav-menu {
-	display: grid;
+	display: inline-grid;
 	font-family: Raleway;
 	color: #4d3e3e;
 	font-size: 16px;
@@ -300,51 +291,79 @@ section d {
 	height: 300px;
 	width: 450px;
 }
-
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-	main {display: none}
-	body {display: none}
-	section div {display: none}
-	footer {display: none}
-	img {display: center;}
+@media only screen and (max-width :767) {
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+	.navigation {
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.navigation ul {
+		display: none;
+	}
+	.navigation ul li {
+		display: block;
+	}
+	.navigation ul.show {
+		display: block;
+	}
+	.navigation ul li a {
+		display: block;
+		padding: 0.5rem 0;
+		color: #4d3e3e;
+		text-decoration: none;
+	}
+	.navigation ul li a:hover {
+	background-color: rgb(196, 189, 185);
+	border-radius: 20px;
+	transition: all 0.5s linear;
+	text-decoration: none;
+	text-decoration-color: none;
+	}
 }
-/*Grid*/
 
-@media screen and (min-width: 740px) {
-	.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6,.grid-half,.grid-full {width: 96.969696969697%;margin: 0 1.515151515152%;float:left;}
-	.grid-half {width: 46.969696969697%;margin: 0 1.515151515152%;}
+@media only screen and (max-width :576) {
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
 	}
-	
-	@media screen and (min-width: 740px) {
-	  .grid-1     { width: 13.636363636364%; }
-	  .grid-2     { width: 30.30303030303%; }
-	  .grid-3,
-	  .grid-half  { width: 46.969696969697%; }
-	  .grid-4     { width: 63.636363636364%; }
-	  .grid-5     { width: 80.30303030303%; }
-	  .grid-6,
-	  .grid-full  { width: 96.969696969697%; }
+	.navigation {
+		width: 100%;
+		margin-top: 1rem;
 	}
-	
-	escritos por profe
+	.navigation ul {
+		display: none;
+	}
+	.navigation ul li {
+		display: block;
+	}
+	.navigation ul.show {
+		display: block;
+	}
+	.navigation ul li a {
+		display: block;
+		padding: 0.5rem 0;
+		color: #4d3e3e;
+		text-decoration: none;
+	}
+	.navigation ul li a:hover {
+	background-color: rgb(196, 189, 185);
+	border-radius: 20px;
+	transition: all 0.5s linear;
+	text-decoration: none;
+	text-decoration-color: none;
+	}
+	.box-padre1 {
+		display: block;
+		align-content: center;
+	}
+	.box-padre2 {
+		display: block;
+		align-content: center;
+	}
+}
 
-	@media screen and (min-width: 500px) and (max-width: 800px) { 
-	.nav-menu{ background-color:blue;}
-	.box-productos-hijo1{background-color: rebeccapurple;}
-	.box-productos-hijo2{background-color: royalblue;}
- }
-
- .parrafo-amarillo{
-	 background-color: yellow;
- }
-
- .parrafo-verde{
-	 background-color: teal;
- }
- .parrafo-rosa{
-	 background-color: thistle;
- }
- .parrafo-celeste{
-	 background-color: turquoise;
- }

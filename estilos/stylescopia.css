@@ -2,23 +2,19 @@
 *{ box-sizing: border-box; }
 
 body {
-	color: #bb3b0e;
-	font-family: 'Merriweather'; 
 	background-color: #f0f0f0;
 	padding: 20px;
 }
-p {
-	color: #4d3e3e;
-	font-family: 'Merriweather'; 
-}
+
 section div {
 	margin-bottom: 20px;
 	margin-top:20px;
 	padding: 10px 10px 10px 10px;
 	background-color: #dddddd;
 }
-footer > p,
-header > nav ¨{ max-width: 1200px; margin: auto; }
+h1 {
+	padding-top: 35px;
+}
 @-o-viewport {
 	width: device-width;
 }
@@ -29,43 +25,45 @@ header > nav ¨{ max-width: 1200px; margin: auto; }
 	width: device-width;
 }
 
-
 /*Headings*/
-h1 {
-	color: #4d3e3e; 
-	font-family: Raleway; 
-	font-size: 30px;
-}
 
+h1 {
+	font-size: 16px;
+    font-family: 'Raleway';
+    padding-top: 10px;
+	letter-spacing: 0em;
+    line-height: 150px;
+	font-weight: 900;
+	color: #4d3e3e;
+	margin-top:20px;
+}
 
 h2 {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 20px; 
+	font-size: 16px; 
 }
-
-h3, h4, {
+h3 h4 {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 18px; 
+	font-size: 14px; 
 }
-a {
-	color: #4d3e3e;
-	font-family: Raleway;
-	font-size: 18px; 
-}
-
 
 /*Texto*/
-
+h1 {
+	font-size: 10px;
+	padding-top: 35px;
+}
 
 footer {
-	color: #4d3e3e;
+	color: #f0f0f0;
 	font-family: Raleway; 
+	font-size: 13px;
 	margin: auto;
 	margin-top:10px;
-	padding: 10px 10px 10px 10px;
-	background-color: #dddddd;
+	padding: 20px;
+	background-color: #772F1A;
+	text-align: center;
 }
 
 button {
@@ -74,29 +72,126 @@ button {
 	padding: 5px 10px 5px 10px;
 	border-radius: 10px;
 }
-
-
+section div p {
+	color: #4d3e3e;
+	font-family: 'Merriweather'; 
+	font-size: 16px;
+	text-align: center;
+}
+nav a {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 15px; 
+	text-decoration: none;
+	text-decoration-color: none;
+	text-align: center;
+	align-content: center;
+}
+div a {
+	color: #4d3e3e;
+	font-family: Raleway;
+	font-size: 15px; 
+	text-decoration: none;
+	text-decoration-color: none;
+	text-align: center;
+}
+div h2 {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 22px; 
+	text-align: center;
+}
+div p {
+	color: #4d3e3e;
+	font-family: 'Merriweather'; 
+	font-size: 16px;
+	text-align: center;
+}
 /*clases css*/
 
+.header {
+	background: rgb(255, 255, 255);
+	opacity: 90%;
+	color: white;
+	padding: 5px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+.header a {
+	color: black;
+	text-decoration: none;
+	padding: 2rem 0;
+}
+.logo {
+	height: 50px;
+	width: 50px;
+}
+.menu-icon {
+	display: none;
+	color: #4d3e3e;
+	height: 20px;
+	width: 20px;
+}
+.logo-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container {
+	width: 85% ;
+	max-width: 850px;
+	margin: 0 auto;
+}
 .color-gris {
 	color: #4d3e3e;
 	font-family: Raleway;
 	font-size: 18px;
 	font-weight: 20px;
 }
-.nav-menu {
-	display: grid;
-	font-family: Raleway;
-	color: #4d3e3e;
-	font-size: 16px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	padding: 5px 5px 5px 5px;
-	width: 1200px;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	justify-content: center;
+
+.main {
+margin-top: 30px;
 }
 
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #4d3e3e;
+}
+.navigation ul li {
+	display: inline-block;
+	padding: 5px;
+	color: #4d3e3e;
+	text-decoration: none;
+}
+.navigation ul li a {
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #4d3e3e;
+	text-decoration: none;
+}
+.navigation ul li a:hover {
+background-color: rgb(196, 189, 185);
+border-radius: 20px;
+transition: all 0.5s linear;
+text-decoration: none;
+text-decoration-color: none;
+}
+
+.nav-button{
+	display:none;
+}
+.transition{
+	-webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
 .box-productos {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -108,7 +203,7 @@ button {
 .box-padre1 {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 10px 10px 10px 10px;
@@ -138,6 +233,7 @@ button {
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-productos-hijo2 {
@@ -162,6 +258,7 @@ button {
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-coleccion-hijo2 {
@@ -176,7 +273,7 @@ button {
 	padding: 10px 10px 10px 10px;
 	height: 750px;
 	width: 1200px;
-	background-color: #dddddd
+	background-image: url(portadanosotros.jpg);
 }
 .box-procesos {
 	margin-bottom: 20px;
@@ -195,6 +292,7 @@ button {
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-nosotros-hijo2 {
@@ -219,6 +317,7 @@ button {
 	margin-left: 100px;	
 	margin-right: 100px;
 	outline: 1px solid grey;
+	text-align: center;
 }
 
 .box-procesos-hijo2 {
@@ -233,7 +332,8 @@ button {
 	padding: 10px 10px 10px 10px;
 	height: auto;
 	width: auto;
-	background-color: #dddddd
+	background-color: #dddddd;
+	text-align: center;
 }
 .box-contacto-padre {
 	margin-bottom: 20px;
@@ -242,6 +342,7 @@ button {
 	height: auto;
 	width: auto;
 	align-content:center;
+	text-align: center;
 	background-color: #dddddd
 }
 
@@ -268,10 +369,7 @@ button {
 }
 
 /*imagenes*/
-main img {
-	height: 50px;
-	width: 50px;
-}
+
 section img {
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -282,7 +380,7 @@ section main img {
 	margin-bottom: 20px;
 	margin-top: 20px;
 	height: 700px;
-	width: 1200px;
+	width: auto;
 }
 video {
 	margin-bottom: 10px;
@@ -290,11 +388,42 @@ video {
 	height: 500px;
 	width: 	800px;
 }
-section d {
-	margin-bottom: 20px;
-	margin-top: 20px;
-	height: 300px;
-	width: 450px;
+section div img {
+	height: 450px;
+	width: 600px;
+}
+@media only screen and (max-width :767) {
+	.menu-icon {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+	.navigation {
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.navigation ul {
+		display: none;
+	}
+	.navigation ul li {
+		display: block;
+	}
+	.navigation ul.show {
+		display: block;
+	}
+	.navigation ul li a {
+		display: block;
+		padding: 0.5rem 0;
+		color: #4d3e3e;
+		text-decoration: none;
+	}
+	.navigation ul li a:hover {
+	background-color: rgb(196, 189, 185);
+	border-radius: 20px;
+	transition: all 0.5s linear;
+	text-decoration: none;
+	text-decoration-color: none;
+	}
 }
 
 @media screen and (min-width: 740px) {
@@ -313,4 +442,3 @@ section d {
 	  .grid-full  { width: 96.969696969697%; }
 	}
 	
-
