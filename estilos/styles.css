@@ -4,6 +4,7 @@
 body {
 	background-color: #f0f0f0;
 	padding: 20px;
+	margin-top: 35px;
 }
 
 section div {
@@ -12,9 +13,7 @@ section div {
 	padding: 10px 10px 10px 10px;
 	background-color: #dddddd;
 }
-h1 {
-	padding-top: 35px;
-}
+
 @-o-viewport {
 	width: device-width;
 }
@@ -28,32 +27,55 @@ h1 {
 /*Headings*/
 
 h1 {
-	font-size: 16px;
-    font-family: 'Raleway';
-    padding-top: 10px;
+	font-size: 14px;
+    font-family: Raleway;
+    padding-top: 50px;
 	letter-spacing: 0em;
-    line-height: 150px;
-	font-weight: 900;
-	color: #4d3e3e;
-	margin-top:20px;
+	color: #bb3b0e;
+	margin-top:60px;
+	text-align: center;
 }
 
 h2 {
 	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 16px; 
+	font-size: 14px; 
 }
-h3 h4 {
+h3 {
 	color: #bb3b0e;
 	font-family: Raleway;
 	font-size: 14px; 
 }
-
-/*Texto*/
-h1 {
-	font-size: 10px;
-	padding-top: 35px;
+h4 {
+	color: #bb3b0e;
+	font-family: Raleway;
+	font-size: 12px; 
 }
+/*imagenes*/
+
+section img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 500px;
+	width: 750px;
+}
+section main img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 700px;
+	width: auto;
+}
+video {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 500px;
+	width: 	800px;
+}
+section div img {
+	height: 450px;
+	width: 600px;
+}
+/*Texto*/
 
 footer {
 	color: #f0f0f0;
@@ -70,11 +92,18 @@ button {
 	border: 20px;
 	border-bottom: 20px;
 	padding: 5px 10px 5px 10px;
-	border-radius: 10px;
+	border-radius: 20px;
+	width: max-content;
 }
 section div p {
 	color: #4d3e3e;
-	font-family: 'Merriweather'; 
+	font-family: Raleway;
+	font-size: 18px;
+	text-align: center;
+}
+p {
+	color: #4d3e3e;
+	font-family: Raleway;
 	font-size: 16px;
 	text-align: center;
 }
@@ -91,21 +120,43 @@ div a {
 	color: #4d3e3e;
 	font-family: Raleway;
 	font-size: 15px; 
+	font-weight: bolder;
 	text-decoration: none;
 	text-decoration-color: none;
 	text-align: center;
 }
 div h2 {
 	color: #bb3b0e;
+	font-family: 'Merriweather';
+	font-size: 20px; 
+	text-align: center;
+}
+div h3 {
+	color: #bb3b0e;
 	font-family: Raleway;
-	font-size: 22px; 
+	font-size: 20px; 
+	font-weight: bolder;
 	text-align: center;
 }
 div p {
 	color: #4d3e3e;
-	font-family: 'Merriweather'; 
+	font-family: Raleway;
 	font-size: 16px;
 	text-align: center;
+}
+article h2 {
+	font-family: Raleway;
+	color: #bb3b0e;
+	font-size: 16px; 
+	font-style: bold;
+	font-weight: bolder;
+	text-align: center;
+}
+article div p {
+	font-family: Raleway;
+	color: #4d3e3e;
+	font-size: 12px; 
+	text-align: left;
 }
 /*clases css*/
 
@@ -118,7 +169,6 @@ div p {
 	left: 0;
 	top: 0;
 	right: 0;
-	margin-top: 30px;
 }
 .header a {
 	color: black;
@@ -135,6 +185,7 @@ div p {
 	height: 20px;
 	width: 20px;
 }
+
 .logo-nav-container {
 	display: flex;
 	justify-content: space-between;
@@ -152,11 +203,14 @@ div p {
 	font-size: 18px;
 	font-weight: 20px;
 }
-
+.main-img {
+	height: 800px;
+	width: auto;
+}
 .main {
 margin-top: 30px;
+width: auto;
 }
-
 .navigation ul {
 	margin: 0;
 	padding: 0;
@@ -183,10 +237,10 @@ text-decoration: none;
 text-decoration-color: none;
 }
 
-.nav-button{
+.nav-button {
 	display:none;
 }
-.transition{
+.transition {
 	-webkit-transition: all 500ms linear;
     -moz-transition: all 500ms linear;
     -o-transition: all 500ms linear;
@@ -194,12 +248,12 @@ text-decoration-color: none;
     transition: all 500ms linear;
 }
 .box-productos {
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 35px;
+	margin-top: 35px;
 	padding: 10px 10px 10px 10px;
 	height: auto;
 	width: auto;
-	background-color: #dddddd
+	background-color: #dddddd;
 }
 .box-padre1 {
 	display: flex;
@@ -334,10 +388,8 @@ text-decoration-color: none;
 	height: auto;
 	width: auto;
 	background-color: #dddddd;
-	text-align: center;
 }
 .box-contacto-padre {
-	margin-bottom: 20px;
 	margin-top: 20px;
 	padding: 10px 10px 10px 10px;
 	height: auto;
@@ -361,37 +413,66 @@ text-decoration-color: none;
 	"individualyposavaso cuencoceramica"
 	"tapiz piedecama"
 }
-
-.button {
-	border: 20px;
-	border-bottom: 20px;
-	padding: 5px 10px 5px 10px;
-	cursor: pointer;
+.article-layout  {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr 4fr;
+	grid-auto-rows: auto;
+	grid-gap: 30px;
+	column-gap: 30px;
+	max-width: 400px;
+	padding: 10px 10px 10px 10px;
+	justify-content: space-between;
 }
 
-/*imagenes*/
-
-section img {
-	margin-bottom: 20px;
-	margin-top: 20px;
-	height: 500px;
-	width: 800px;
+.article-layout article {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: 100px auto;
+	grid-auto-rows: 100px;
+	padding: 20px;
+	border: 1px solid #fff;
 }
-section main img {
-	margin-bottom: 20px;
-	margin-top: 20px;
-	height: 700px;
+.article-layout opcion 2 {
+	display: grid;
+	grid-template-columns: minmax(auto, 1fr) 1fr;
+	grid-auto-rows: auto;
+	grid-gap: 10px;
+	max-width: 400px;
+	justify-content: space-between;
+}
+.img-wrapper {
+	overflow: hidden;
+	height: 200px;
+	width: 200px;
+}
+.article-footer {
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+.article-body {
+	overflow: hidden;
+	height: auto;
 	width: auto;
 }
-video {
-	margin-bottom: 10px;
-	margin-top: 10px;
-	height: 500px;
-	width: 	800px;
+.social {
+	padding: 10px;
+	height: 30px;
+	width: 30px;
+	text-decoration: none;
 }
-section div img {
-	height: 450px;
-	width: 600px;
+.social p a {
+	padding: 10px;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.social p a:hover{
+	padding: 20px;
+	background: #772F1A; 
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
 }
 @media only screen and (max-width :767) {
 	.menu-icon {
@@ -400,11 +481,11 @@ section div img {
 		padding: 0.5rem 1rem;
 	}
 	.navigation {
-		width: 100%;
+		width: 80%;
 		margin-top: 1rem;
 	}
 	.navigation ul {
-		display: none;
+		display: block;
 	}
 	.navigation ul li {
 		display: block;
